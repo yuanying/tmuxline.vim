@@ -203,6 +203,7 @@ fun! tmuxline#get_global_config(line, theme)
   let window_activity_attr = len(window_activity[2]) ? window_activity[2] : 'none'
 
   let misc_options = {
+        \ 'status-bg'                   : bg,
         \ 'status-style'                : printf('none,bg=%s', bg),
         \ 'message-style'               : printf('fg=%s,bg=%s', message_fg, message_bg),
         \ 'message-command-style'       : printf('fg=%s,bg=%s', message_fg, message_bg),
